@@ -7,3 +7,8 @@ c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\o
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.csproj.GenerateResource.Cache
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.exe
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.pdb
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Json.dll
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Json.pdb
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.Jugar.resources
