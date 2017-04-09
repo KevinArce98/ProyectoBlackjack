@@ -10,7 +10,7 @@ namespace Blackjack.Utils
    public class Validations
     {
 
-        public static int sumarCartas(Carta oCarta)
+        public static int sumarCartas(Carta oCarta, int sumaTotal)
         {
             int suma = 0;
             if (oCarta.Value.Equals("QUEEN") || oCarta.Value.Equals("KING") || oCarta.Value.Equals("JACK"))
@@ -19,7 +19,7 @@ namespace Blackjack.Utils
             }
             else if (oCarta.Value.Equals("ACE"))
             {
-                if (suma < 7)
+                if (sumaTotal < 6)
                 {
                     suma += 1;
                 }

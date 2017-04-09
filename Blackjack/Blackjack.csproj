@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelos\API.cs" />
+    <Compile Include="Modelos\Baraja.cs" />
     <Compile Include="Modelos\Carta.cs" />
     <Compile Include="Modelos\Partida.cs" />
     <Compile Include="Utils\RunningData.cs" />
@@ -101,7 +102,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagenes\CartaOculta.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

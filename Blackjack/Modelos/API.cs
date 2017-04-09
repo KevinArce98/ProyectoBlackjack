@@ -48,7 +48,7 @@ namespace Blackjack.Modelos
             String responseData = streamReader.ReadToEnd();
             Partida oPartida = JsonConvert.DeserializeObject<Partida>(responseData);
             RunningData.Partida = oPartida;
-            RunningData.Partida.Remaining = RunningData.Partida.Remaining - 2;
+            RunningData.Partida.Remaining = RunningData.Partida.Remaining - 4;
         }
 
 

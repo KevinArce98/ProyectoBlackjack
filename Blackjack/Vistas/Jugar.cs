@@ -2,25 +2,43 @@
 using Blackjack.Utils;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Blackjack.Vistas
 {
     public partial class Jugar : Form
     {
-        private int suma;
+        private int sumaJugador;
+        private int sumaDealer;
+        private Baraja oBarajaJugador;
+        private Baraja oBarajaDealer;
         public Jugar()
         {
             InitializeComponent();
-            suma = 0;
+            sumaJugador = 0;
+            sumaDealer = 0;
+            oBarajaJugador = new Baraja();
+            oBarajaDealer = new Baraja();
         }
-        private void empiezaJuego()
+        private void empiezaJuegoJugador()
         {
             List<Carta> oList = API.requestCardStartGame(RunningData.Partida.Deck_Id);
             foreach (Carta item in oList)
             {
-                this.mostarCarta(item);
-                suma += Validations.sumarCartas(item);
+                this.mostarCartaJugador(item);
+                oBarajaJugador.cartas.Add(item);
+                sumaJugador += Validations.sumarCartas(item, sumaJugador);
+            }
+        }
+        private void empiezaJuegoDealer()
+        {
+            List<Carta> oList = API.requestCardStartGame(RunningData.Partida.Deck_Id);
+            foreach (Carta item in oList)
+            {
+                this.mostarCartaDealer(item);
+                oBarajaDealer.cartas.Add(item);
+                sumaDealer += Validations.sumarCartas(item, sumaDealer);
             }
         }
      
@@ -29,23 +47,41 @@ namespace Blackjack.Vistas
             this.resetear();
             API.newGame();
             txtRestantes.Text = RunningData.Partida.Remaining.ToString();
-            this.empiezaJuego();
-            txtSuma.Text = suma.ToString();
-            if (Validations.verificaGanada(suma) == true)
+            this.empiezaJuegoJugador();
+            this.empiezaJuegoDealer();
+            txtSuma.Text = sumaJugador.ToString();
+            if (Validations.verificaGanada(sumaJugador) == true)
             {
+                CardDealer2.ImageLocation = oBarajaDealer.cartas[1].Image;
                 MessageBox.Show("Blackjack");
             }
-            btnPedir.Visible = true;
-            btnRebarajar.Visible = true; 
+            else
+            {
+                btnPedir.Visible = true;
+                btnRebarajar.Visible = true;
+                btnPasar.Visible = true;
+            }
         }
 
         private void btnPedir_Click(object sender, EventArgs e)
         {
             Carta oCarta = API.requestCard(RunningData.Partida.Deck_Id);
-            this.mostarCarta(oCarta);
-            suma += Validations.sumarCartas(oCarta);
-            txtSuma.Text = suma.ToString();
+            this.mostarCartaJugador(oCarta);
+            oBarajaJugador.cartas.Add(oCarta);
+            sumaJugador += Validations.sumarCartas(oCarta, sumaJugador);
+            txtSuma.Text = sumaJugador.ToString();
             txtRestantes.Text = RunningData.Partida.Remaining.ToString();
+            if (sumaJugador > 21)
+            {
+                CardDealer2.ImageLocation = oBarajaDealer.cartas[1].Image;
+                MessageBox.Show("Lo Siento te pasas\n Dealer: " +sumaDealer);
+                this.resetear();
+            }else if (sumaJugador == 21)
+            {
+                CardDealer2.ImageLocation = oBarajaDealer.cartas[1].Image;
+                MessageBox.Show("Felicidades\nPuntos Dealer: " + sumaDealer);
+                this.resetear();
+            }
         }
 
         private void btnRebarajar_Click(object sender, EventArgs e)
@@ -53,50 +89,28 @@ namespace Blackjack.Vistas
             API.reshuffleCards(RunningData.Partida.Deck_Id);
             txtRestantes.Text = RunningData.Partida.Remaining.ToString();
         }
-        private void mostarCarta(Carta pCarta)
+        private void mostarCartaJugador(Carta pCarta)
         {
-            switch (RunningData.ContadorCartas)
+            switch (oBarajaJugador.cartas.Count)
             {
                 case 0:
                     Card1.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
                     break;
                 case 1:
-                    Card2.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
+                    Card2.ImageLocation = pCarta.Image; 
                     break;
                 case 2:
                     Card3.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
                     break;
                 case 3:
                     Card4.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
                     break;
                 case 4:
                     Card5.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
                     break;
                 case 5:
                     Card6.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
                     break;
-                case 6:
-                    Card7.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
-                    break;
-                case 7:
-                    Card8.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
-                    break;
-                case 8:
-                    Card9.ImageLocation = pCarta.Image;
-                    RunningData.ContadorCartas++;
-                    break;
-                case 9:
-                    Card10.ImageLocation = pCarta.Image;
-                    break;
-
             }
         }
         private void resetear()
@@ -107,12 +121,79 @@ namespace Blackjack.Vistas
             Card4.Image = null;
             Card5.Image = null;
             Card6.Image = null;
-            Card7.Image = null;
-            Card8.Image = null;
-            Card9.Image = null;
-            Card10.Image = null;
-            RunningData.ContadorCartas = 0;
-            suma = 0;
+            CardDealer1.Image = null;
+            CardDealer2.Image = null;
+            CardDealer3.Image = null;
+            CardDealer4.Image = null;
+            CardDealer5.Image = null;
+            CardDealer6.Image = null;
+            sumaJugador = 0;
+            sumaDealer = 0;
+            oBarajaDealer.cartas = new List<Carta>();
+            oBarajaJugador.cartas = new List<Carta>();
+            txtRestantes.Text = "";
+            txtSuma.Text = "";
+            btnPasar.Visible = false;
+            btnPedir.Visible = false;
+            btnRebarajar.Visible = false;
+        }
+
+        private void btnPasar_Click(object sender, EventArgs e)
+        {
+            if (sumaJugador < sumaDealer)
+            {
+                CardDealer2.ImageLocation = oBarajaDealer.cartas[1].Image;
+                MessageBox.Show("Dealer gana!!\nPuntos: "+sumaDealer);
+                this.resetear();
+            }
+            else if(sumaDealer < sumaJugador)
+            {
+                do
+                {
+                    Carta oCarta = API.requestCard(RunningData.Partida.Deck_Id);
+                    this.mostarCartaDealer(oCarta);
+                    oBarajaDealer.cartas.Add(oCarta);
+                    sumaDealer += Validations.sumarCartas(oCarta, sumaDealer);
+                    txtRestantes.Text = RunningData.Partida.Remaining.ToString();
+                    if (sumaDealer == 21)
+                    {
+                        CardDealer2.ImageLocation = oBarajaDealer.cartas[1].Image;
+                        MessageBox.Show("Dealer Gana\nPuntos: " + sumaDealer);
+                        break;
+                    }
+                    else if(sumaDealer > 21 )
+                    {
+                        CardDealer2.ImageLocation = oBarajaDealer.cartas[1].Image;
+                        MessageBox.Show("Felicidades!!\nPuntos Dealer: " + sumaDealer);
+                        break;
+                    }
+                } while (sumaDealer<= sumaJugador);
+            }
+        }
+
+        private void mostarCartaDealer(Carta pCarta)
+        {
+            switch (oBarajaDealer.cartas.Count)
+            {
+                case 0:
+                    CardDealer1.ImageLocation = pCarta.Image;
+                    break;
+                case 1:
+                    CardDealer2.Image = Image.FromFile(@"C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\Imagenes\CartaOculta.png");
+                    break;
+                case 2:
+                    CardDealer3.ImageLocation = pCarta.Image;
+                    break;
+                case 3:
+                    CardDealer4.ImageLocation = pCarta.Image;
+                    break;
+                case 4:
+                    CardDealer5.ImageLocation = pCarta.Image;
+                    break;
+                case 5:
+                    CardDealer6.ImageLocation = pCarta.Image;
+                    break;
+            }
         }
     }
 }

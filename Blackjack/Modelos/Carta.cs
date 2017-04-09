@@ -8,11 +8,7 @@ namespace Blackjack.Modelos
         public string Code { get; set; }
         public string Image { get; set; }
         public string Value { get; set; }
-
-        public Carta()
-        {
-                
-        }
+        public bool Hide { get; set; }
     }
     public class RootObjectCards
     {
