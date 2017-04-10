@@ -52,6 +52,10 @@
             this.CardDealer2 = new System.Windows.Forms.PictureBox();
             this.CardDealer1 = new System.Windows.Forms.PictureBox();
             this.btnPasar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtGanadas = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPerdidas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Card1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card3)).BeginInit();
@@ -287,11 +291,51 @@
             this.btnPasar.Visible = false;
             this.btnPasar.Click += new System.EventHandler(this.btnPasar_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(610, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Ganadas:";
+            // 
+            // txtGanadas
+            // 
+            this.txtGanadas.Location = new System.Drawing.Point(669, 12);
+            this.txtGanadas.Name = "txtGanadas";
+            this.txtGanadas.ReadOnly = true;
+            this.txtGanadas.Size = new System.Drawing.Size(71, 20);
+            this.txtGanadas.TabIndex = 30;
+            this.txtGanadas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(746, 15);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Perdidas";
+            // 
+            // txtPerdidas
+            // 
+            this.txtPerdidas.Location = new System.Drawing.Point(799, 12);
+            this.txtPerdidas.Name = "txtPerdidas";
+            this.txtPerdidas.ReadOnly = true;
+            this.txtPerdidas.Size = new System.Drawing.Size(71, 20);
+            this.txtPerdidas.TabIndex = 32;
+            this.txtPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Jugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 473);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtPerdidas);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtGanadas);
             this.Controls.Add(this.btnPasar);
             this.Controls.Add(this.CardDealer6);
             this.Controls.Add(this.CardDealer5);
@@ -361,5 +405,9 @@
         private System.Windows.Forms.PictureBox CardDealer2;
         private System.Windows.Forms.PictureBox CardDealer1;
         private System.Windows.Forms.Button btnPasar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtGanadas;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtPerdidas;
     }
 }

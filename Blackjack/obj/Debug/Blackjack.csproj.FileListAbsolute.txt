@@ -12,3 +12,11 @@ C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\b
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Json.pdb
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.Jugar.resources
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\DBAccess.dll
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Npgsql.dll
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\MySql.Data.dll
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\System.Data.SQLite.dll
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\DBAccess.pdb
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Npgsql.xml
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\System.Data.SQLite.xml
+C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.Principal.resources
