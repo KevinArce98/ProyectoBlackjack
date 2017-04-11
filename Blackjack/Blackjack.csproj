@@ -36,6 +36,10 @@
     <Reference Include="DBAccess">
       <HintPath>..\..\DBAccess\DBAccess\bin\Debug\DBAccess.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c6752e45808247c2, processorArchitecture=MSIL">
       <HintPath>..\packages\JSON.1.0.1\lib\net40\Json.dll</HintPath>
       <Private>True</Private>
@@ -66,19 +70,20 @@
     <Compile Include="Modelos\Carta.cs" />
     <Compile Include="Modelos\Partida.cs" />
     <Compile Include="Modelos\Puntuaciones.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Utils\RunningData.cs" />
     <Compile Include="Utils\Validations.cs" />
+    <Compile Include="Vistas\FacebookLoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FacebookLoginDialog.Designer.cs">
+      <DependentUpon>FacebookLoginDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Jugar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\Jugar.Designer.cs">
       <DependentUpon>Jugar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,11 +93,17 @@
     <Compile Include="Vistas\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\PrincipalJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PrincipalJuego.Designer.cs">
+      <DependentUpon>PrincipalJuego.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\FacebookLoginDialog.resx">
+      <DependentUpon>FacebookLoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Jugar.resx">
       <DependentUpon>Jugar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,9 +113,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vistas\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PrincipalJuego.resx">
+      <DependentUpon>PrincipalJuego.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -122,6 +137,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\CartaOculta.png" />
+    <Content Include="Imagenes\Casino-Hd-Hd-Desktop-Wallpaper.jpg" />
+    <Content Include="Imagenes\facebookLogin.png" />
+    <Content Include="Imagenes\logoutfacebbok.png" />
+    <None Include="Resources\logoutfacebbok.png" />
+    <None Include="Resources\Casino-Hd-Hd-Desktop-Wallpaper.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

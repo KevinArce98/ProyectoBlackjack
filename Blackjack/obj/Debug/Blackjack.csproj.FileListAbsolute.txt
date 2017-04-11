@@ -20,3 +20,26 @@ C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\b
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Npgsql.xml
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\System.Data.SQLite.xml
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.Principal.resources
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Blackjack.exe.config
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.exe
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.pdb
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Blackjack.exe
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Blackjack.pdb
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Json.dll
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Newtonsoft.Json.dll
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\MySql.Data.dll
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\System.Data.SQLite.dll
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\DBAccess.pdb
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Json.pdb
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Newtonsoft.Json.xml
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Npgsql.xml
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\System.Data.SQLite.xml
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.csprojResolveAssemblyReference.cache
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.Vistas.Jugar.resources
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.Properties.Resources.resources
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.Vistas.Principal.resources
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.csproj.GenerateResource.Cache
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Facebook.dll
+D:\appBlackJack\ProyectoBlackjack\Blackjack\bin\Debug\Facebook.xml
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.Vistas.FacebookLoginDialog.resources
+D:\appBlackJack\ProyectoBlackjack\Blackjack\obj\Debug\Blackjack.Vistas.PrincipalJuego.resources
