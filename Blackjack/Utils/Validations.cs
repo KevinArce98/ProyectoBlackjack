@@ -1,36 +1,40 @@
 ﻿using Blackjack.Modelos;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Blackjack.Utils
 {
    public class Validations
     {
 
-        public static int sumarCartas(Carta oCarta, int sumaTotal)
+        public static int sumarCartas(Baraja oBaraja)
         {
+            List<Carta> oListAce = new List<Carta>();
             int suma = 0;
-            if (oCarta.Value.Equals("QUEEN") || oCarta.Value.Equals("KING") || oCarta.Value.Equals("JACK"))
+            foreach (Carta item in oBaraja.cartas)
             {
-                suma += 10;
-            }
-            else if (oCarta.Value.Equals("ACE"))
-            {
-                if (sumaTotal < 6)
+                if (item.Value.Equals("QUEEN") || item.Value.Equals("KING") || item.Value.Equals("JACK"))
                 {
-                    suma += 1;
+                    suma += 10;
+                }
+                else if (item.Value.Equals("ACE"))
+                {
+                    oListAce.Add(item);
                 }
                 else
                 {
-                    suma += 11;
+                    suma += int.Parse(item.Value);
                 }
             }
-            else
+            foreach (Carta item in oListAce)
             {
-                suma += int.Parse(oCarta.Value);
+                if (suma <= 10)
+                {
+                    suma += 11;
+                }
+                else if(suma > 10)
+                {
+                    suma += 1;
+                }
             }
             return suma;
         }
@@ -43,6 +47,10 @@ namespace Blackjack.Utils
                 gano = true;
             }
             return gano;
+        }
+        public static void verificaUsuario(Usuario oUsuario)
+        {
+
         }
     }
 }

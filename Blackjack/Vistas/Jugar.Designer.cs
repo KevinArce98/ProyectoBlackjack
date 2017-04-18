@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jugar));
             this.Card1 = new System.Windows.Forms.PictureBox();
             this.btnPedir = new System.Windows.Forms.Button();
             this.btnNueva = new System.Windows.Forms.Button();
@@ -56,6 +57,8 @@
             this.txtGanadas = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPerdidas = new System.Windows.Forms.TextBox();
+            this.imagenJugador = new System.Windows.Forms.PictureBox();
+            this.imagenDealer = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Card1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card3)).BeginInit();
@@ -68,11 +71,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.CardDealer3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardDealer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardDealer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenJugador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenDealer)).BeginInit();
             this.SuspendLayout();
             // 
             // Card1
             // 
-            this.Card1.Location = new System.Drawing.Point(17, 46);
+            this.Card1.Location = new System.Drawing.Point(17, 71);
             this.Card1.Name = "Card1";
             this.Card1.Size = new System.Drawing.Size(123, 169);
             this.Card1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -81,7 +86,7 @@
             // 
             // btnPedir
             // 
-            this.btnPedir.Location = new System.Drawing.Point(831, 130);
+            this.btnPedir.Location = new System.Drawing.Point(814, 145);
             this.btnPedir.Name = "btnPedir";
             this.btnPedir.Size = new System.Drawing.Size(75, 28);
             this.btnPedir.TabIndex = 3;
@@ -92,7 +97,7 @@
             // 
             // btnNueva
             // 
-            this.btnNueva.Location = new System.Drawing.Point(831, 64);
+            this.btnNueva.Location = new System.Drawing.Point(814, 79);
             this.btnNueva.Name = "btnNueva";
             this.btnNueva.Size = new System.Drawing.Size(75, 26);
             this.btnNueva.TabIndex = 4;
@@ -102,7 +107,7 @@
             // 
             // btnRebarajar
             // 
-            this.btnRebarajar.Location = new System.Drawing.Point(831, 96);
+            this.btnRebarajar.Location = new System.Drawing.Point(814, 111);
             this.btnRebarajar.Name = "btnRebarajar";
             this.btnRebarajar.Size = new System.Drawing.Size(75, 28);
             this.btnRebarajar.TabIndex = 5;
@@ -113,7 +118,7 @@
             // 
             // Card2
             // 
-            this.Card2.Location = new System.Drawing.Point(146, 44);
+            this.Card2.Location = new System.Drawing.Point(146, 69);
             this.Card2.Name = "Card2";
             this.Card2.Size = new System.Drawing.Size(123, 169);
             this.Card2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +127,7 @@
             // 
             // Card3
             // 
-            this.Card3.Location = new System.Drawing.Point(275, 44);
+            this.Card3.Location = new System.Drawing.Point(275, 69);
             this.Card3.Name = "Card3";
             this.Card3.Size = new System.Drawing.Size(123, 169);
             this.Card3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +136,7 @@
             // 
             // Card4
             // 
-            this.Card4.Location = new System.Drawing.Point(404, 44);
+            this.Card4.Location = new System.Drawing.Point(404, 69);
             this.Card4.Name = "Card4";
             this.Card4.Size = new System.Drawing.Size(123, 169);
             this.Card4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,7 +145,7 @@
             // 
             // Card5
             // 
-            this.Card5.Location = new System.Drawing.Point(533, 44);
+            this.Card5.Location = new System.Drawing.Point(533, 69);
             this.Card5.Name = "Card5";
             this.Card5.Size = new System.Drawing.Size(123, 169);
             this.Card5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -149,7 +154,7 @@
             // 
             // Card6
             // 
-            this.Card6.Location = new System.Drawing.Point(662, 44);
+            this.Card6.Location = new System.Drawing.Point(662, 69);
             this.Card6.Name = "Card6";
             this.Card6.Size = new System.Drawing.Size(123, 169);
             this.Card6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +163,7 @@
             // 
             // txtRestantes
             // 
-            this.txtRestantes.Location = new System.Drawing.Point(842, 237);
+            this.txtRestantes.Location = new System.Drawing.Point(835, 265);
             this.txtRestantes.Name = "txtRestantes";
             this.txtRestantes.ReadOnly = true;
             this.txtRestantes.Size = new System.Drawing.Size(71, 20);
@@ -167,7 +172,7 @@
             // 
             // txtSuma
             // 
-            this.txtSuma.Location = new System.Drawing.Point(389, 12);
+            this.txtSuma.Location = new System.Drawing.Point(472, 24);
             this.txtSuma.Name = "txtSuma";
             this.txtSuma.ReadOnly = true;
             this.txtSuma.Size = new System.Drawing.Size(71, 20);
@@ -176,7 +181,7 @@
             // 
             // txtJugador
             // 
-            this.txtJugador.Location = new System.Drawing.Point(68, 12);
+            this.txtJugador.Location = new System.Drawing.Point(146, 24);
             this.txtJugador.Name = "txtJugador";
             this.txtJugador.ReadOnly = true;
             this.txtJugador.Size = new System.Drawing.Size(252, 20);
@@ -185,7 +190,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 15);
+            this.label1.Location = new System.Drawing.Point(87, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 18;
@@ -194,7 +199,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(796, 240);
+            this.label2.Location = new System.Drawing.Point(789, 268);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 19;
@@ -203,7 +208,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(343, 15);
+            this.label3.Location = new System.Drawing.Point(426, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 20;
@@ -212,7 +217,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 243);
+            this.label4.Location = new System.Drawing.Point(94, 268);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 21;
@@ -220,7 +225,7 @@
             // 
             // txtDealer
             // 
-            this.txtDealer.Location = new System.Drawing.Point(68, 240);
+            this.txtDealer.Location = new System.Drawing.Point(146, 265);
             this.txtDealer.Name = "txtDealer";
             this.txtDealer.ReadOnly = true;
             this.txtDealer.Size = new System.Drawing.Size(252, 20);
@@ -228,7 +233,7 @@
             // 
             // CardDealer6
             // 
-            this.CardDealer6.Location = new System.Drawing.Point(662, 283);
+            this.CardDealer6.Location = new System.Drawing.Point(662, 308);
             this.CardDealer6.Name = "CardDealer6";
             this.CardDealer6.Size = new System.Drawing.Size(123, 169);
             this.CardDealer6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,7 +242,7 @@
             // 
             // CardDealer5
             // 
-            this.CardDealer5.Location = new System.Drawing.Point(533, 283);
+            this.CardDealer5.Location = new System.Drawing.Point(533, 308);
             this.CardDealer5.Name = "CardDealer5";
             this.CardDealer5.Size = new System.Drawing.Size(123, 169);
             this.CardDealer5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -246,7 +251,7 @@
             // 
             // CardDealer4
             // 
-            this.CardDealer4.Location = new System.Drawing.Point(404, 283);
+            this.CardDealer4.Location = new System.Drawing.Point(404, 308);
             this.CardDealer4.Name = "CardDealer4";
             this.CardDealer4.Size = new System.Drawing.Size(123, 169);
             this.CardDealer4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -255,7 +260,7 @@
             // 
             // CardDealer3
             // 
-            this.CardDealer3.Location = new System.Drawing.Point(275, 283);
+            this.CardDealer3.Location = new System.Drawing.Point(275, 308);
             this.CardDealer3.Name = "CardDealer3";
             this.CardDealer3.Size = new System.Drawing.Size(123, 169);
             this.CardDealer3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,7 +269,7 @@
             // 
             // CardDealer2
             // 
-            this.CardDealer2.Location = new System.Drawing.Point(146, 283);
+            this.CardDealer2.Location = new System.Drawing.Point(146, 308);
             this.CardDealer2.Name = "CardDealer2";
             this.CardDealer2.Size = new System.Drawing.Size(123, 169);
             this.CardDealer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -273,7 +278,7 @@
             // 
             // CardDealer1
             // 
-            this.CardDealer1.Location = new System.Drawing.Point(17, 285);
+            this.CardDealer1.Location = new System.Drawing.Point(17, 310);
             this.CardDealer1.Name = "CardDealer1";
             this.CardDealer1.Size = new System.Drawing.Size(123, 169);
             this.CardDealer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -282,7 +287,7 @@
             // 
             // btnPasar
             // 
-            this.btnPasar.Location = new System.Drawing.Point(831, 164);
+            this.btnPasar.Location = new System.Drawing.Point(814, 179);
             this.btnPasar.Name = "btnPasar";
             this.btnPasar.Size = new System.Drawing.Size(75, 28);
             this.btnPasar.TabIndex = 29;
@@ -294,7 +299,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(610, 15);
+            this.label5.Location = new System.Drawing.Point(569, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 31;
@@ -302,7 +307,7 @@
             // 
             // txtGanadas
             // 
-            this.txtGanadas.Location = new System.Drawing.Point(669, 12);
+            this.txtGanadas.Location = new System.Drawing.Point(628, 24);
             this.txtGanadas.Name = "txtGanadas";
             this.txtGanadas.ReadOnly = true;
             this.txtGanadas.Size = new System.Drawing.Size(71, 20);
@@ -312,7 +317,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(746, 15);
+            this.label6.Location = new System.Drawing.Point(705, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 33;
@@ -320,18 +325,38 @@
             // 
             // txtPerdidas
             // 
-            this.txtPerdidas.Location = new System.Drawing.Point(799, 12);
+            this.txtPerdidas.Location = new System.Drawing.Point(758, 24);
             this.txtPerdidas.Name = "txtPerdidas";
             this.txtPerdidas.ReadOnly = true;
             this.txtPerdidas.Size = new System.Drawing.Size(71, 20);
             this.txtPerdidas.TabIndex = 32;
             this.txtPerdidas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // imagenJugador
+            // 
+            this.imagenJugador.Location = new System.Drawing.Point(17, 8);
+            this.imagenJugador.Name = "imagenJugador";
+            this.imagenJugador.Size = new System.Drawing.Size(65, 57);
+            this.imagenJugador.TabIndex = 34;
+            this.imagenJugador.TabStop = false;
+            // 
+            // imagenDealer
+            // 
+            this.imagenDealer.Image = ((System.Drawing.Image)(resources.GetObject("imagenDealer.Image")));
+            this.imagenDealer.Location = new System.Drawing.Point(17, 247);
+            this.imagenDealer.Name = "imagenDealer";
+            this.imagenDealer.Size = new System.Drawing.Size(65, 57);
+            this.imagenDealer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagenDealer.TabIndex = 35;
+            this.imagenDealer.TabStop = false;
+            // 
             // Jugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 473);
+            this.ClientSize = new System.Drawing.Size(938, 504);
+            this.Controls.Add(this.imagenDealer);
+            this.Controls.Add(this.imagenJugador);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPerdidas);
             this.Controls.Add(this.label5);
@@ -374,6 +399,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.CardDealer3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardDealer2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardDealer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenJugador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenDealer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,5 +436,7 @@
         private System.Windows.Forms.TextBox txtGanadas;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtPerdidas;
+        private System.Windows.Forms.PictureBox imagenJugador;
+        private System.Windows.Forms.PictureBox imagenDealer;
     }
 }

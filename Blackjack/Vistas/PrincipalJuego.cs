@@ -48,11 +48,11 @@ namespace Blackjack.Vistas
                     Usuario oUsuario = new Usuario();
                     oUsuario.Correo = me.email;
                     oUsuario.Nombre = me.name;
-                    oUsuario.Perfil = me.picture.data.url;
+                    oUsuario.Foto = me.picture.data.url;
                     Utils.RunningData.Usuario = oUsuario;
                     Principal frm = new Principal();
                     frm.Show();
-                    this.Close();
+                    this.Hide();
                     //this.imgPerfil.ImageLocation = me.picture.data.url;
                     //MessageBox.Show("Hi " + me.name + "\n" + me.email);
                     //btnLogOut.Visible = true;

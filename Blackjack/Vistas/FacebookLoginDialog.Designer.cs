@@ -37,17 +37,19 @@
             this.webBrowser.Location = new System.Drawing.Point(0, 0);
             this.webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(787, 531);
+            this.webBrowser.Size = new System.Drawing.Size(649, 308);
             this.webBrowser.TabIndex = 0;
+            this.webBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.webBrowser_Navigated);
             // 
             // FacebookLoginDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 531);
+            this.ClientSize = new System.Drawing.Size(649, 308);
             this.Controls.Add(this.webBrowser);
             this.Name = "FacebookLoginDialog";
             this.Text = "FacebookLoginDialog";
+            this.Load += new System.EventHandler(this.FacebookLoginDialog_Load);
             this.ResumeLayout(false);
 
         }

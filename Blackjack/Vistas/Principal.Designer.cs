@@ -49,6 +49,7 @@
             this.Controls.Add(this.btnJugar);
             this.Name = "Principal";
             this.Text = "Principal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Principal_FormClosed);
             this.ResumeLayout(false);
 
         }

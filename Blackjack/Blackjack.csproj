@@ -64,12 +64,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\Puntuaciones.cs" />
+    <Compile Include="Controladores\Dealer.cs" />
+    <Compile Include="Controladores\Partida.cs" />
+    <Compile Include="Controladores\Usuario.cs" />
     <Compile Include="Modelos\API.cs" />
     <Compile Include="Modelos\Baraja.cs" />
     <Compile Include="Modelos\Carta.cs" />
+    <Compile Include="Modelos\Dealer.cs" />
+    <Compile Include="Modelos\Juego.cs" />
     <Compile Include="Modelos\Partida.cs" />
-    <Compile Include="Modelos\Puntuaciones.cs" />
     <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Utils\RunningData.cs" />
     <Compile Include="Utils\Validations.cs" />
@@ -140,6 +143,7 @@
     <Content Include="Imagenes\Casino-Hd-Hd-Desktop-Wallpaper.jpg" />
     <Content Include="Imagenes\facebookLogin.png" />
     <Content Include="Imagenes\logoutfacebbok.png" />
+    <Content Include="Imagenes\silueta.png" />
     <None Include="Resources\logoutfacebbok.png" />
     <None Include="Resources\Casino-Hd-Hd-Desktop-Wallpaper.jpg" />
   </ItemGroup>

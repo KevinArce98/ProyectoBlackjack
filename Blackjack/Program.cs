@@ -22,7 +22,7 @@ namespace Blackjack
 
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Pg"].ConnectionString;
             Program.da = new PgAccess(connectionString);
-            Application.Run(new Principal());
+            Application.Run(new PrincipalJuego());
         }
     }
 }

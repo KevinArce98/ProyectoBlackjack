@@ -28,6 +28,7 @@ namespace Blackjack.Vistas
             _loginUrl = GenerateLoginUrl(appId, extendedPermissions);
 
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private Uri GenerateLoginUrl(string appId, string extendedPermissions)

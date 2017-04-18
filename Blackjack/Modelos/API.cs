@@ -46,7 +46,7 @@ namespace Blackjack.Modelos
             WebResponse response = webRequest.GetResponse();
             StreamReader streamReader = new StreamReader(response.GetResponseStream());
             String responseData = streamReader.ReadToEnd();
-            Partida oPartida = JsonConvert.DeserializeObject<Partida>(responseData);
+            Juego oPartida = JsonConvert.DeserializeObject<Juego>(responseData);
             RunningData.Partida = oPartida;
         }
 
@@ -59,7 +59,7 @@ namespace Blackjack.Modelos
             WebResponse response = webRequest.GetResponse();
             StreamReader streamReader = new StreamReader(response.GetResponseStream());
             String responseData = streamReader.ReadToEnd();
-            Partida oPartida = JsonConvert.DeserializeObject<Partida>(responseData);
+            Juego oPartida = JsonConvert.DeserializeObject<Juego>(responseData);
             RunningData.Partida = oPartida;
             RunningData.Partida.Remaining = RunningData.Partida.Remaining - 4;
         }
