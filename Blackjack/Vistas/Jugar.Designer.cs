@@ -81,7 +81,7 @@
             // 
             // btnPedir
             // 
-            this.btnPedir.Location = new System.Drawing.Point(831, 96);
+            this.btnPedir.Location = new System.Drawing.Point(831, 130);
             this.btnPedir.Name = "btnPedir";
             this.btnPedir.Size = new System.Drawing.Size(75, 28);
             this.btnPedir.TabIndex = 3;
@@ -102,7 +102,7 @@
             // 
             // btnRebarajar
             // 
-            this.btnRebarajar.Location = new System.Drawing.Point(831, 130);
+            this.btnRebarajar.Location = new System.Drawing.Point(831, 96);
             this.btnRebarajar.Name = "btnRebarajar";
             this.btnRebarajar.Size = new System.Drawing.Size(75, 28);
             this.btnRebarajar.TabIndex = 5;

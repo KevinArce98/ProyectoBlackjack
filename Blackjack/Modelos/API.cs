@@ -41,14 +41,13 @@ namespace Blackjack.Modelos
 
         public static void newGame()
         {
-            Uri uri = new Uri(@"https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1");
+            Uri uri = new Uri(@"https://deckofcardsapi.com/api/deck/new/");
             WebRequest webRequest = WebRequest.Create(uri);
             WebResponse response = webRequest.GetResponse();
             StreamReader streamReader = new StreamReader(response.GetResponseStream());
             String responseData = streamReader.ReadToEnd();
             Partida oPartida = JsonConvert.DeserializeObject<Partida>(responseData);
             RunningData.Partida = oPartida;
-            RunningData.Partida.Remaining = RunningData.Partida.Remaining - 4;
         }
 
 
@@ -62,6 +61,7 @@ namespace Blackjack.Modelos
             String responseData = streamReader.ReadToEnd();
             Partida oPartida = JsonConvert.DeserializeObject<Partida>(responseData);
             RunningData.Partida = oPartida;
+            RunningData.Partida.Remaining = RunningData.Partida.Remaining - 4;
         }
 
     }

@@ -15,6 +15,7 @@ namespace Blackjack.Vistas
         public Principal()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
