@@ -82,6 +82,12 @@
     <Compile Include="Vistas\FacebookLoginDialog.Designer.cs">
       <DependentUpon>FacebookLoginDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Historial.Designer.cs">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Jugar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="Vistas\FacebookLoginDialog.resx">
       <DependentUpon>FacebookLoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Historial.resx">
+      <DependentUpon>Historial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Jugar.resx">
       <DependentUpon>Jugar.cs</DependentUpon>

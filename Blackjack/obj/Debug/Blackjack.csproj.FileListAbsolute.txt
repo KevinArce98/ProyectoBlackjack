@@ -46,3 +46,4 @@ C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\b
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Facebook.xml
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.FacebookLoginDialog.resources
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.PrincipalJuego.resources
+C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.Historial.resources

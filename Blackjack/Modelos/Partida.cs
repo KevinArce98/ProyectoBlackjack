@@ -61,5 +61,17 @@ namespace Blackjack.Modelos
                 this.Id = Convert.ToInt32(result.Rows[0]["id"]);
             }
         }
+
+        public DataTable SelectHistorial()
+        {
+            string sql = "SELECT * FROM partidas";
+            DataTable result = Program.da.SqlQuery(sql, new Dictionary<string, object>());
+            if (Program.da.isError)
+            {
+                this.isError = true;
+                this.errorDescription = Program.da.errorDescription;
+            }
+            return result;
+        }
     }
 }

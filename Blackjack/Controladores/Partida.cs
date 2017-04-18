@@ -28,6 +28,18 @@ namespace Blackjack.Controladores
             return total;
         }
 
+        public DataTable SelectHistorial()
+        {
+            DataTable result = new DataTable();
+            result = this.oPartida.SelectHistorial();
+            if (this.oPartida.isError)
+            {
+                this.isError = true;
+                this.errorDescription = this.oPartida.errorDescription;
+            }
+            return result;
+        }
+
         public void Insert(string pDeck, int pIdJugador, bool pGano)
         {
             this.oPartida = new Modelos.Partida(pDeck, pIdJugador, pGano);
