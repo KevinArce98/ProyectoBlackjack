@@ -49,9 +49,13 @@ namespace Blackjack.Vistas
                     oUsuario.Correo = me.email;
                     oUsuario.Nombre = me.name;
                     oUsuario.Perfil = me.picture.data.url;
-                    this.imgPerfil.ImageLocation = me.picture.data.url;
-                    MessageBox.Show("Hi " + me.name + "\n" + me.email);
-                    btnLogOut.Visible = true;
+                    Utils.RunningData.Usuario = oUsuario;
+                    Principal frm = new Principal();
+                    frm.Show();
+                    this.Close();
+                    //this.imgPerfil.ImageLocation = me.picture.data.url;
+                    //MessageBox.Show("Hi " + me.name + "\n" + me.email);
+                    //btnLogOut.Visible = true;
                     //aqui se va a llamar al form del juego una vez que entre bb
 
                 }
