@@ -38,7 +38,7 @@
             // btnLoginFacebook
             // 
             this.btnLoginFacebook.Image = ((System.Drawing.Image)(resources.GetObject("btnLoginFacebook.Image")));
-            this.btnLoginFacebook.Location = new System.Drawing.Point(800, 800);
+            this.btnLoginFacebook.Location = new System.Drawing.Point(344, 415);
             this.btnLoginFacebook.Name = "btnLoginFacebook";
             this.btnLoginFacebook.Size = new System.Drawing.Size(396, 61);
             this.btnLoginFacebook.TabIndex = 0;
