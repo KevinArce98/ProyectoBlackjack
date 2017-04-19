@@ -1,7 +1,6 @@
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Blackjack.exe.config
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Blackjack.exe
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\bin\Debug\Blackjack.pdb
-c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.csprojResolveAssemblyReference.cache
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Properties.Resources.resources
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.csproj.GenerateResource.Cache
 c:\users\kevin arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.exe
@@ -47,3 +46,5 @@ C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\b
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.FacebookLoginDialog.resources
 C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.PrincipalJuego.resources
 C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.Historial.resources
+C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\bin\Debug\DevComponents.DotNetBar2.xml

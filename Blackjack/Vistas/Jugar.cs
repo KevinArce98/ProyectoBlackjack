@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Blackjack.Vistas
 {
-    public partial class Jugar : Form
+    public partial class Jugar : DevComponents.DotNetBar.Metro.MetroForm
     {
         private int sumaJugador;
         private int sumaDealer;
@@ -25,6 +25,7 @@ namespace Blackjack.Vistas
             oBarajaDealer = new Baraja();
             this.cargarUsuario();
             this.cargarDealer();
+            this.resetear();
         }
         private void cargarUsuario()
         {
@@ -59,8 +60,8 @@ namespace Blackjack.Vistas
                 sumaDealer = Validations.sumarCartas(oBarajaDealer);
             }
         }
-     
-        private void btnNueva_Click(object sender, EventArgs e)
+
+        private void btnNueva_Click_1(object sender, EventArgs e)
         {
             API.newGame();
             txtRestantes.Text = RunningData.Partida.Remaining.ToString();
@@ -151,21 +152,27 @@ namespace Blackjack.Vistas
             switch (oBarajaDealer.cartas.Count)
             {
                 case 0:
+                    CardDealer1.Visible = true;
                     CardDealer1.ImageLocation = pCarta.Image;
                     break;
                 case 1:
+                    CardDealer2.Visible = true;
                     CardDealer2.Image = Image.FromFile(@"C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\Imagenes\CartaOculta.png");
                     break;
                 case 2:
+                    CardDealer3.Visible = true;
                     CardDealer3.ImageLocation = pCarta.Image;
                     break;
                 case 3:
+                    CardDealer4.Visible = true;
                     CardDealer4.ImageLocation = pCarta.Image;
                     break;
                 case 4:
+                    CardDealer5.Visible = true;
                     CardDealer5.ImageLocation = pCarta.Image;
                     break;
                 case 5:
+                    CardDealer6.Visible = true;
                     CardDealer6.ImageLocation = pCarta.Image;
                     break;
             }
@@ -175,39 +182,34 @@ namespace Blackjack.Vistas
             switch (oBarajaJugador.cartas.Count)
             {
                 case 0:
+                    Card1.Visible = true;
                     Card1.ImageLocation = pCarta.Image;
                     break;
                 case 1:
+                    Card2.Visible = true;
                     Card2.ImageLocation = pCarta.Image;
                     break;
                 case 2:
+                    Card3.Visible = true;
                     Card3.ImageLocation = pCarta.Image;
                     break;
                 case 3:
+                    Card4.Visible = true;
                     Card4.ImageLocation = pCarta.Image;
                     break;
                 case 4:
+                    Card5.Visible = true;
                     Card5.ImageLocation = pCarta.Image;
                     break;
                 case 5:
+                    Card6.Visible = true;
                     Card6.ImageLocation = pCarta.Image;
                     break;
             }
         }
         private void resetear()
         {
-            Card1.Image = null;
-            Card2.Image = null;
-            Card3.Image = null;
-            Card4.Image = null;
-            Card5.Image = null;
-            Card6.Image = null;
-            CardDealer1.Image = null;
-            CardDealer2.Image = null;
-            CardDealer3.Image = null;
-            CardDealer4.Image = null;
-            CardDealer5.Image = null;
-            CardDealer6.Image = null;
+            this.ocultarPictureBox();
             sumaJugador = 0;
             sumaDealer = 0;
             oBarajaDealer.cartas = new List<Carta>();
@@ -221,5 +223,33 @@ namespace Blackjack.Vistas
             this.cargarUsuario();
             this.cargarDealer();
         }
+        private void ocultarPictureBox()
+        {
+            Card1.Image = null;
+            Card2.Image = null;
+            Card3.Image = null;
+            Card4.Image = null;
+            Card5.Image = null;
+            Card6.Image = null;
+            CardDealer1.Image = null;
+            CardDealer2.Image = null;
+            CardDealer3.Image = null;
+            CardDealer4.Image = null;
+            CardDealer5.Image = null;
+            CardDealer6.Image = null;
+            Card1.Visible = false;
+            Card2.Visible = false;
+            Card3.Visible = false;
+            Card4.Visible = false;
+            Card5.Visible = false;
+            Card6.Visible = false;
+            CardDealer1.Visible = false;
+            CardDealer2.Visible = false;
+            CardDealer3.Visible = false;
+            CardDealer4.Visible = false;
+            CardDealer5.Visible = false;
+            CardDealer6.Visible = false;
+        }
+ 
     }
 }

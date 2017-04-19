@@ -5,7 +5,7 @@ using Blackjack.Modelos;
 
 namespace Blackjack.Vistas
 {
-    public partial class PrincipalJuego : Form
+    public partial class PrincipalJuego : DevComponents.DotNetBar.Metro.MetroForm
     {
 
         private const string AppId = "461471847525252";
@@ -15,6 +15,7 @@ namespace Blackjack.Vistas
         public PrincipalJuego()
         {
             InitializeComponent();
+            this.logoutFacebook();
         }
 
         private void btnLoginFacebook_Click(object sender, EventArgs e)
@@ -67,6 +68,15 @@ namespace Blackjack.Vistas
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            var webBrowser = new WebBrowser();
+            var fb = new FacebookClient();
+            var logouUrl = fb.GetLogoutUrl(new { access_token = _accessToken, next = "https://www.facebook.com/connect/login_success.html" });
+            webBrowser.Navigate(logouUrl);
+            btnLogOut.Visible = false;
+        }
+
+        public void logoutFacebook()
         {
             var webBrowser = new WebBrowser();
             var fb = new FacebookClient();

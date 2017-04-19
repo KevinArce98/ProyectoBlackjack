@@ -5,7 +5,7 @@ using Facebook;
 
 namespace Blackjack.Vistas
 {
-    public partial class FacebookLoginDialog : Form
+    public partial class FacebookLoginDialog : DevComponents.DotNetBar.Metro.MetroForm
     {
         private readonly Uri _loginUrl;
         protected readonly FacebookClient _fb;

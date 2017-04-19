@@ -1,24 +1,18 @@
 ﻿using Blackjack.Controladores;
 using Blackjack.Utils;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Blackjack.Vistas
 {
-    public partial class Principal : Form
+    public partial class Principal : DevComponents.DotNetBar.Metro.MetroForm
     {
         public Principal()
         {
             InitializeComponent();
             this.CenterToScreen();
             this.buscaUsuario();
+            txtUsu.Text = "Bienvenido/a: " + RunningData.Usuario.Nombre;
         }
         private void buscaUsuario()
         {
@@ -44,6 +38,8 @@ namespace Blackjack.Vistas
 
         private void Principal_FormClosed(object sender, FormClosedEventArgs e)
         {
+            PrincipalJuego frm = new PrincipalJuego();
+            frm.logoutFacebook();
             Application.Exit();
         }
 

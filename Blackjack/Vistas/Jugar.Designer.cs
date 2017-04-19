@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jugar));
             this.Card1 = new System.Windows.Forms.PictureBox();
-            this.btnPedir = new System.Windows.Forms.Button();
-            this.btnNueva = new System.Windows.Forms.Button();
-            this.btnRebarajar = new System.Windows.Forms.Button();
             this.Card2 = new System.Windows.Forms.PictureBox();
             this.Card3 = new System.Windows.Forms.PictureBox();
             this.Card4 = new System.Windows.Forms.PictureBox();
@@ -40,25 +37,28 @@
             this.Card6 = new System.Windows.Forms.PictureBox();
             this.txtRestantes = new System.Windows.Forms.TextBox();
             this.txtSuma = new System.Windows.Forms.TextBox();
-            this.txtJugador = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtDealer = new System.Windows.Forms.TextBox();
             this.CardDealer6 = new System.Windows.Forms.PictureBox();
             this.CardDealer5 = new System.Windows.Forms.PictureBox();
             this.CardDealer4 = new System.Windows.Forms.PictureBox();
             this.CardDealer3 = new System.Windows.Forms.PictureBox();
             this.CardDealer2 = new System.Windows.Forms.PictureBox();
             this.CardDealer1 = new System.Windows.Forms.PictureBox();
-            this.btnPasar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtGanadas = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPerdidas = new System.Windows.Forms.TextBox();
             this.imagenJugador = new System.Windows.Forms.PictureBox();
             this.imagenDealer = new System.Windows.Forms.PictureBox();
+            this.btnNueva = new DevComponents.DotNetBar.ButtonX();
+            this.txtDealer = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtJugador = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btnRebarajar = new DevComponents.DotNetBar.ButtonX();
+            this.btnPedir = new DevComponents.DotNetBar.ButtonX();
+            this.btnPasar = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.Card1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card3)).BeginInit();
@@ -83,38 +83,6 @@
             this.Card1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Card1.TabIndex = 0;
             this.Card1.TabStop = false;
-            // 
-            // btnPedir
-            // 
-            this.btnPedir.Location = new System.Drawing.Point(814, 145);
-            this.btnPedir.Name = "btnPedir";
-            this.btnPedir.Size = new System.Drawing.Size(75, 28);
-            this.btnPedir.TabIndex = 3;
-            this.btnPedir.Text = "Pedir Carta";
-            this.btnPedir.UseVisualStyleBackColor = true;
-            this.btnPedir.Visible = false;
-            this.btnPedir.Click += new System.EventHandler(this.btnPedir_Click);
-            // 
-            // btnNueva
-            // 
-            this.btnNueva.Location = new System.Drawing.Point(814, 79);
-            this.btnNueva.Name = "btnNueva";
-            this.btnNueva.Size = new System.Drawing.Size(75, 26);
-            this.btnNueva.TabIndex = 4;
-            this.btnNueva.Text = "Nueva Partida";
-            this.btnNueva.UseVisualStyleBackColor = true;
-            this.btnNueva.Click += new System.EventHandler(this.btnNueva_Click);
-            // 
-            // btnRebarajar
-            // 
-            this.btnRebarajar.Location = new System.Drawing.Point(814, 111);
-            this.btnRebarajar.Name = "btnRebarajar";
-            this.btnRebarajar.Size = new System.Drawing.Size(75, 28);
-            this.btnRebarajar.TabIndex = 5;
-            this.btnRebarajar.Text = "Re-Barajar";
-            this.btnRebarajar.UseVisualStyleBackColor = true;
-            this.btnRebarajar.Visible = false;
-            this.btnRebarajar.Click += new System.EventHandler(this.btnRebarajar_Click);
             // 
             // Card2
             // 
@@ -163,7 +131,7 @@
             // 
             // txtRestantes
             // 
-            this.txtRestantes.Location = new System.Drawing.Point(835, 265);
+            this.txtRestantes.Location = new System.Drawing.Point(825, 269);
             this.txtRestantes.Name = "txtRestantes";
             this.txtRestantes.ReadOnly = true;
             this.txtRestantes.Size = new System.Drawing.Size(71, 20);
@@ -172,64 +140,60 @@
             // 
             // txtSuma
             // 
-            this.txtSuma.Location = new System.Drawing.Point(472, 24);
+            this.txtSuma.Location = new System.Drawing.Point(478, 25);
             this.txtSuma.Name = "txtSuma";
             this.txtSuma.ReadOnly = true;
             this.txtSuma.Size = new System.Drawing.Size(71, 20);
             this.txtSuma.TabIndex = 16;
             this.txtSuma.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtJugador
-            // 
-            this.txtJugador.Location = new System.Drawing.Point(146, 24);
-            this.txtJugador.Name = "txtJugador";
-            this.txtJugador.ReadOnly = true;
-            this.txtJugador.Size = new System.Drawing.Size(252, 20);
-            this.txtJugador.TabIndex = 17;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 27);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(74, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 18;
             this.label1.Text = "Jugador:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(789, 268);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(755, 269);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 19;
             this.label2.Text = "Cartas:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(426, 27);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(409, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(63, 17);
             this.label3.TabIndex = 20;
             this.label3.Text = "Puntos:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label4.Location = new System.Drawing.Point(94, 268);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(62, 17);
             this.label4.TabIndex = 21;
             this.label4.Text = "Dealer:";
-            // 
-            // txtDealer
-            // 
-            this.txtDealer.Location = new System.Drawing.Point(146, 265);
-            this.txtDealer.Name = "txtDealer";
-            this.txtDealer.ReadOnly = true;
-            this.txtDealer.Size = new System.Drawing.Size(252, 20);
-            this.txtDealer.TabIndex = 22;
             // 
             // CardDealer6
             // 
@@ -285,29 +249,21 @@
             this.CardDealer1.TabIndex = 23;
             this.CardDealer1.TabStop = false;
             // 
-            // btnPasar
-            // 
-            this.btnPasar.Location = new System.Drawing.Point(814, 179);
-            this.btnPasar.Name = "btnPasar";
-            this.btnPasar.Size = new System.Drawing.Size(75, 28);
-            this.btnPasar.TabIndex = 29;
-            this.btnPasar.Text = "Pasar";
-            this.btnPasar.UseVisualStyleBackColor = true;
-            this.btnPasar.Visible = false;
-            this.btnPasar.Click += new System.EventHandler(this.btnPasar_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(569, 27);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label5.Location = new System.Drawing.Point(555, 27);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.Size = new System.Drawing.Size(80, 17);
             this.label5.TabIndex = 31;
             this.label5.Text = "Ganadas:";
             // 
             // txtGanadas
             // 
-            this.txtGanadas.Location = new System.Drawing.Point(628, 24);
+            this.txtGanadas.Location = new System.Drawing.Point(641, 24);
             this.txtGanadas.Name = "txtGanadas";
             this.txtGanadas.ReadOnly = true;
             this.txtGanadas.Size = new System.Drawing.Size(71, 20);
@@ -317,15 +273,18 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(705, 27);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label6.Location = new System.Drawing.Point(718, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(73, 17);
             this.label6.TabIndex = 33;
             this.label6.Text = "Perdidas";
             // 
             // txtPerdidas
             // 
-            this.txtPerdidas.Location = new System.Drawing.Point(758, 24);
+            this.txtPerdidas.Location = new System.Drawing.Point(797, 25);
             this.txtPerdidas.Name = "txtPerdidas";
             this.txtPerdidas.ReadOnly = true;
             this.txtPerdidas.Size = new System.Drawing.Size(71, 20);
@@ -334,46 +293,128 @@
             // 
             // imagenJugador
             // 
-            this.imagenJugador.Location = new System.Drawing.Point(17, 8);
+            this.imagenJugador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imagenJugador.Location = new System.Drawing.Point(17, 12);
             this.imagenJugador.Name = "imagenJugador";
-            this.imagenJugador.Size = new System.Drawing.Size(65, 57);
+            this.imagenJugador.Size = new System.Drawing.Size(51, 48);
             this.imagenJugador.TabIndex = 34;
             this.imagenJugador.TabStop = false;
             // 
             // imagenDealer
             // 
             this.imagenDealer.Image = ((System.Drawing.Image)(resources.GetObject("imagenDealer.Image")));
-            this.imagenDealer.Location = new System.Drawing.Point(17, 247);
+            this.imagenDealer.Location = new System.Drawing.Point(17, 256);
             this.imagenDealer.Name = "imagenDealer";
-            this.imagenDealer.Size = new System.Drawing.Size(65, 57);
+            this.imagenDealer.Size = new System.Drawing.Size(51, 48);
             this.imagenDealer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagenDealer.TabIndex = 35;
             this.imagenDealer.TabStop = false;
+            // 
+            // btnNueva
+            // 
+            this.btnNueva.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnNueva.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnNueva.Location = new System.Drawing.Point(814, 75);
+            this.btnNueva.Name = "btnNueva";
+            this.btnNueva.Size = new System.Drawing.Size(92, 30);
+            this.btnNueva.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnNueva.TabIndex = 36;
+            this.btnNueva.Text = "Nueva Partida";
+            this.btnNueva.Click += new System.EventHandler(this.btnNueva_Click_1);
+            // 
+            // txtDealer
+            // 
+            this.txtDealer.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtDealer.Border.Class = "TextBoxBorder";
+            this.txtDealer.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDealer.ForeColor = System.Drawing.Color.Black;
+            this.txtDealer.Location = new System.Drawing.Point(153, 267);
+            this.txtDealer.Name = "txtDealer";
+            this.txtDealer.Size = new System.Drawing.Size(257, 20);
+            this.txtDealer.TabIndex = 37;
+            // 
+            // txtJugador
+            // 
+            this.txtJugador.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtJugador.Border.Class = "TextBoxBorder";
+            this.txtJugador.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtJugador.ForeColor = System.Drawing.Color.Black;
+            this.txtJugador.Location = new System.Drawing.Point(146, 25);
+            this.txtJugador.Name = "txtJugador";
+            this.txtJugador.Size = new System.Drawing.Size(257, 20);
+            this.txtJugador.TabIndex = 38;
+            // 
+            // btnRebarajar
+            // 
+            this.btnRebarajar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnRebarajar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnRebarajar.Location = new System.Drawing.Point(814, 111);
+            this.btnRebarajar.Name = "btnRebarajar";
+            this.btnRebarajar.Size = new System.Drawing.Size(92, 28);
+            this.btnRebarajar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnRebarajar.TabIndex = 39;
+            this.btnRebarajar.Text = "Re-Barajar";
+            this.btnRebarajar.Click += new System.EventHandler(this.btnRebarajar_Click);
+            // 
+            // btnPedir
+            // 
+            this.btnPedir.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnPedir.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnPedir.Location = new System.Drawing.Point(814, 145);
+            this.btnPedir.Name = "btnPedir";
+            this.btnPedir.Size = new System.Drawing.Size(92, 28);
+            this.btnPedir.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnPedir.TabIndex = 40;
+            this.btnPedir.Text = "Pedir carta";
+            this.btnPedir.Click += new System.EventHandler(this.btnPedir_Click);
+            // 
+            // btnPasar
+            // 
+            this.btnPasar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnPasar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnPasar.Location = new System.Drawing.Point(814, 179);
+            this.btnPasar.Name = "btnPasar";
+            this.btnPasar.Size = new System.Drawing.Size(92, 28);
+            this.btnPasar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnPasar.TabIndex = 41;
+            this.btnPasar.Text = "Pasar";
+            this.btnPasar.Click += new System.EventHandler(this.btnPasar_Click);
             // 
             // Jugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 504);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(938, 500);
+            this.Controls.Add(this.btnPasar);
+            this.Controls.Add(this.btnPedir);
+            this.Controls.Add(this.btnRebarajar);
+            this.Controls.Add(this.txtJugador);
+            this.Controls.Add(this.txtDealer);
+            this.Controls.Add(this.btnNueva);
             this.Controls.Add(this.imagenDealer);
             this.Controls.Add(this.imagenJugador);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPerdidas);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtGanadas);
-            this.Controls.Add(this.btnPasar);
             this.Controls.Add(this.CardDealer6);
             this.Controls.Add(this.CardDealer5);
             this.Controls.Add(this.CardDealer4);
             this.Controls.Add(this.CardDealer3);
             this.Controls.Add(this.CardDealer2);
             this.Controls.Add(this.CardDealer1);
-            this.Controls.Add(this.txtDealer);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtJugador);
             this.Controls.Add(this.txtSuma);
             this.Controls.Add(this.txtRestantes);
             this.Controls.Add(this.Card6);
@@ -381,11 +422,10 @@
             this.Controls.Add(this.Card4);
             this.Controls.Add(this.Card3);
             this.Controls.Add(this.Card2);
-            this.Controls.Add(this.btnRebarajar);
-            this.Controls.Add(this.btnNueva);
-            this.Controls.Add(this.btnPedir);
             this.Controls.Add(this.Card1);
+            this.DoubleBuffered = true;
             this.Name = "Jugar";
+            this.ShowIcon = false;
             this.Text = "Jugar";
             ((System.ComponentModel.ISupportInitialize)(this.Card1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card2)).EndInit();
@@ -409,9 +449,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox Card1;
-        private System.Windows.Forms.Button btnPedir;
-        private System.Windows.Forms.Button btnNueva;
-        private System.Windows.Forms.Button btnRebarajar;
         private System.Windows.Forms.PictureBox Card2;
         private System.Windows.Forms.PictureBox Card3;
         private System.Windows.Forms.PictureBox Card4;
@@ -419,24 +456,27 @@
         private System.Windows.Forms.PictureBox Card6;
         private System.Windows.Forms.TextBox txtRestantes;
         private System.Windows.Forms.TextBox txtSuma;
-        private System.Windows.Forms.TextBox txtJugador;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtDealer;
         private System.Windows.Forms.PictureBox CardDealer6;
         private System.Windows.Forms.PictureBox CardDealer5;
         private System.Windows.Forms.PictureBox CardDealer4;
         private System.Windows.Forms.PictureBox CardDealer3;
         private System.Windows.Forms.PictureBox CardDealer2;
         private System.Windows.Forms.PictureBox CardDealer1;
-        private System.Windows.Forms.Button btnPasar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtGanadas;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtPerdidas;
         private System.Windows.Forms.PictureBox imagenJugador;
         private System.Windows.Forms.PictureBox imagenDealer;
+        private DevComponents.DotNetBar.ButtonX btnNueva;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtDealer;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtJugador;
+        private DevComponents.DotNetBar.ButtonX btnRebarajar;
+        private DevComponents.DotNetBar.ButtonX btnPedir;
+        private DevComponents.DotNetBar.ButtonX btnPasar;
     }
 }
