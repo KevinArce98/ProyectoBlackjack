@@ -11,6 +11,7 @@ namespace Blackjack
     static class Program
     {
         public static DBAccess.DBAccess da;
+        public static string tokenFacebook;
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

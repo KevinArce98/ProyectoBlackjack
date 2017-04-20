@@ -15,7 +15,6 @@ namespace Blackjack.Vistas
         public PrincipalJuego()
         {
             InitializeComponent();
-            this.logoutFacebook();
         }
 
         private void btnLoginFacebook_Click(object sender, EventArgs e)
@@ -33,6 +32,7 @@ namespace Blackjack.Vistas
                 if (facebookOAuthResult.IsSuccess)
                 {
                     _accessToken = facebookOAuthResult.AccessToken;
+                    Program.tokenFacebook = _accessToken;
 
                     var fb = new FacebookClient(facebookOAuthResult.AccessToken);
                     
@@ -73,16 +73,16 @@ namespace Blackjack.Vistas
             var fb = new FacebookClient();
             var logouUrl = fb.GetLogoutUrl(new { access_token = _accessToken, next = "https://www.facebook.com/connect/login_success.html" });
             webBrowser.Navigate(logouUrl);
-            btnLogOut.Visible = false;
+            //btnLogOut.Visible = false;
         }
 
         public void logoutFacebook()
         {
             var webBrowser = new WebBrowser();
             var fb = new FacebookClient();
-            var logouUrl = fb.GetLogoutUrl(new { access_token = _accessToken, next = "https://www.facebook.com/connect/login_success.html" });
+            var logouUrl = fb.GetLogoutUrl(new { access_token = Program.tokenFacebook, next = "https://www.facebook.com/connect/login_success.html" });
             webBrowser.Navigate(logouUrl);
-            btnLogOut.Visible = false;
+            //btnLogOut.Visible = false;
         }
     }
 }
