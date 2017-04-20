@@ -333,6 +333,7 @@
             this.txtDealer.ForeColor = System.Drawing.Color.Black;
             this.txtDealer.Location = new System.Drawing.Point(153, 267);
             this.txtDealer.Name = "txtDealer";
+            this.txtDealer.ReadOnly = true;
             this.txtDealer.Size = new System.Drawing.Size(257, 20);
             this.txtDealer.TabIndex = 37;
             // 
@@ -347,6 +348,7 @@
             this.txtJugador.ForeColor = System.Drawing.Color.Black;
             this.txtJugador.Location = new System.Drawing.Point(146, 25);
             this.txtJugador.Name = "txtJugador";
+            this.txtJugador.ReadOnly = true;
             this.txtJugador.Size = new System.Drawing.Size(257, 20);
             this.txtJugador.TabIndex = 38;
             // 

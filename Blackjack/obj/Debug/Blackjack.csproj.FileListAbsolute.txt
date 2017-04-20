@@ -48,3 +48,4 @@ C:\Users\Kevin Arias\Documents\Visual Studio 2015\Projects\Blackjack\Blackjack\o
 C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.Vistas.Historial.resources
 C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\bin\Debug\DevComponents.DotNetBar2.dll
 C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Kevin Arias\documents\visual studio 2015\Projects\Blackjack\Blackjack\obj\Debug\Blackjack.csprojResolveAssemblyReference.cache

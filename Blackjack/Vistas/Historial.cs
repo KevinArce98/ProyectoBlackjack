@@ -1,17 +1,9 @@
 ﻿using Blackjack.Controladores;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Blackjack.Vistas
 {
-    public partial class Historial : Form
+    public partial class Historial : DevComponents.DotNetBar.Metro.MetroForm
     {
         public Historial()
         {
