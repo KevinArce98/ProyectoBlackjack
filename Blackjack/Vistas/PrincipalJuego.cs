@@ -15,6 +15,7 @@ namespace Blackjack.Vistas
         public PrincipalJuego()
         {
             InitializeComponent();
+            this.logoutFacebook();
         }
 
         private void btnLoginFacebook_Click(object sender, EventArgs e)
@@ -47,7 +48,7 @@ namespace Blackjack.Vistas
                     //su usuario para que lo haga un rollito y....
 
                     Usuario oUsuario = new Usuario();
-                    oUsuario.Correo = me.email;
+                    oUsuario.Correo = me.id;
                     oUsuario.Nombre = me.name;
                     oUsuario.Foto = me.picture.data.url;
                     Utils.RunningData.Usuario = oUsuario;
@@ -73,7 +74,6 @@ namespace Blackjack.Vistas
             var fb = new FacebookClient();
             var logouUrl = fb.GetLogoutUrl(new { access_token = _accessToken, next = "https://www.facebook.com/connect/login_success.html" });
             webBrowser.Navigate(logouUrl);
-            //btnLogOut.Visible = false;
         }
 
         public void logoutFacebook()
@@ -82,7 +82,6 @@ namespace Blackjack.Vistas
             var fb = new FacebookClient();
             var logouUrl = fb.GetLogoutUrl(new { access_token = Program.tokenFacebook, next = "https://www.facebook.com/connect/login_success.html" });
             webBrowser.Navigate(logouUrl);
-            //btnLogOut.Visible = false;
         }
     }
 }

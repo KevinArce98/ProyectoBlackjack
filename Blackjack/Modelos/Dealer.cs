@@ -1,34 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Blackjack.Modelos
 {
-    public class Dealer : DBAccess.ErrorHandler
+    public class Dealer
     {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public Dealer()
-        {
+    }
 
-        }
-        public DataTable Select(int id)
-        {
-            Dictionary<string, object> parametros = new Dictionary<string, object>();
-            parametros.Add("id", id);
+    public class Name
+    {
+        public string title { get; set; }
+        public string first { get; set; }
+        public string last { get; set; }
+    }
 
-            string sql = "SELECT * FROM dealer WHERE id = @id ";
-            DataTable result = Program.da.SqlQuery(sql, parametros);
-            if (Program.da.isError)
-            {
-                this.isError = true;
-                this.errorDescription = Program.da.errorDescription;
-            }
-            return result;
-        }
+    public class Picture
+    {
+        public string large { get; set; }
+        public string medium { get; set; }
+        public string thumbnail { get; set; }
+    }
+
+    public class Result
+    {
+        public Name name { get; set; }
+        public Picture picture { get; set; }
+    }
+
+    public class Info
+    {
+        public string seed { get; set; }
+        public int results { get; set; }
+        public int page { get; set; }
+        public string version { get; set; }
+    }
+
+    public class RootObjectDealerOtro
+    {
+        public List<Result> results { get; set; }
+        public Info info { get; set; }
     }
 
 }

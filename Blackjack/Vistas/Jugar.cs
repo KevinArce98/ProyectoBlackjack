@@ -31,15 +31,19 @@ namespace Blackjack.Vistas
         {
             txtJugador.Text = RunningData.Usuario.Nombre;
             imagenJugador.ImageLocation = RunningData.Usuario.Foto;
-            txtGanadas.Text = oPartida.Select(RunningData.Usuario.Id, true).ToString();
-            txtPerdidas.Text = oPartida.Select(RunningData.Usuario.Id, false).ToString();
+            int ganadas = oPartida.Select(RunningData.Usuario.Id, true);
+            int perdidas = oPartida.Select(RunningData.Usuario.Id, false);
+            txtGanadas.Text = ganadas.ToString();
+            txtPerdidas.Text = perdidas.ToString();
+            int totalPartidas = ganadas + perdidas;
+            txtTotal.Text = totalPartidas.ToString();
         } 
         private void cargarDealer()
         {
-            Controladores.Dealer oDealer = new Controladores.Dealer();
-            Random rnd = new Random();
-            int id = rnd.Next(1, 23);
-            txtDealer.Text = oDealer.Select(id).Nombre;
+           Result oDealer = ApiNames.obtenerDealerOtro();
+            txtDealer.Text = Validations.CapitalizeFirstLetter(oDealer.name.first) + " " +
+                Validations.CapitalizeFirstLetter(oDealer.name.last);
+            imagenDealer.ImageLocation = oDealer.picture.medium;
         }
        
         private void empiezaJuego()

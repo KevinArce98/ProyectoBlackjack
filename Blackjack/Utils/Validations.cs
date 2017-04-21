@@ -1,5 +1,6 @@
 ﻿using Blackjack.Modelos;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Blackjack.Utils
 {
@@ -48,9 +49,9 @@ namespace Blackjack.Utils
             }
             return gano;
         }
-        public static void verificaUsuario(Usuario oUsuario)
+        public static string CapitalizeFirstLetter(string value)
         {
-
+            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(value);
         }
     }
 }

@@ -65,7 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\Dealer.cs" />
     <Compile Include="Controladores\Partida.cs" />
     <Compile Include="Controladores\Usuario.cs" />
     <Compile Include="Modelos\API.cs" />
@@ -75,6 +74,7 @@
     <Compile Include="Modelos\Juego.cs" />
     <Compile Include="Modelos\Partida.cs" />
     <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="Utils\ApiNames.cs" />
     <Compile Include="Utils\RunningData.cs" />
     <Compile Include="Utils\Validations.cs" />
     <Compile Include="Vistas\FacebookLoginDialog.cs">
