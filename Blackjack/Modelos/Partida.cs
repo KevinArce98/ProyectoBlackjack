@@ -64,7 +64,21 @@ namespace Blackjack.Modelos
 
         public DataTable SelectHistorial()
         {
-            string sql = "SELECT * FROM partidas";
+            string sql = "SELECT p.id, p.deck_id, p.fecha, u.nombre, p.gano "+
+                "FROM partidas p, usuario u WHERE p.id_jugador = u.id ORDER BY p.id ASC";
+            DataTable result = Program.da.SqlQuery(sql, new Dictionary<string, object>());
+            if (Program.da.isError)
+            {
+                this.isError = true;
+                this.errorDescription = Program.da.errorDescription;
+            }
+            return result;
+        }
+
+        public DataTable SelectData()
+        {
+            string sql = "SELECT u.nombre, count(p.gano) AS ganadas FROM partidas p, usuario u "+
+                "WHERE p.id_jugador = u.id AND p.gano = true GROUP BY u.nombre ORDER BY ganadas DESC";
             DataTable result = Program.da.SqlQuery(sql, new Dictionary<string, object>());
             if (Program.da.isError)
             {

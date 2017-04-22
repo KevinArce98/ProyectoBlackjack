@@ -13,6 +13,7 @@ namespace Blackjack.Vistas
             this.CenterToScreen();
             this.buscaUsuario();
             txtUsu.Text = "Bienvenido/a: " + RunningData.Usuario.Nombre;
+            txtUsu.ForeColor = System.Drawing.Color.White;
         }
         private void buscaUsuario()
         {

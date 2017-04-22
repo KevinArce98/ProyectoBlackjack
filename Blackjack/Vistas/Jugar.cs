@@ -26,6 +26,7 @@ namespace Blackjack.Vistas
             this.cargarUsuario();
             this.cargarDealer();
             this.resetear();
+            this.colorLabel();
         }
         private void cargarUsuario()
         {
@@ -253,6 +254,16 @@ namespace Blackjack.Vistas
             CardDealer4.Visible = false;
             CardDealer5.Visible = false;
             CardDealer6.Visible = false;
+        }
+
+        private void colorLabel()
+        {   this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
         }
  
     }

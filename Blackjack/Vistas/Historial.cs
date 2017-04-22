@@ -8,12 +8,16 @@ namespace Blackjack.Vistas
         public Historial()
         {
             InitializeComponent();
-            this.cargarTabla();
+            this.cargarTablaYChart();
+            this.CenterToScreen();
         }
-        private void cargarTabla()
+        private void cargarTablaYChart()
         {
             Partida oPartida = new Partida();
             dtgHistorial.DataSource = oPartida.SelectHistorial();
+            chart1.DataSource = oPartida.SelectData();
+            chart1.Series[0].XValueMember = "nombre";
+            chart1.Series[0].YValueMembers = "ganadas";
         }
     }
 }

@@ -299,7 +299,7 @@
             // 
             // imagenJugador
             // 
-            this.imagenJugador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imagenJugador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.imagenJugador.Location = new System.Drawing.Point(17, 12);
             this.imagenJugador.Name = "imagenJugador";
             this.imagenJugador.Size = new System.Drawing.Size(51, 48);
