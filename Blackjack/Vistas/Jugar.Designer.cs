@@ -79,7 +79,7 @@
             // 
             // Card1
             // 
-            this.Card1.Location = new System.Drawing.Point(17, 71);
+            this.Card1.Location = new System.Drawing.Point(12, 323);
             this.Card1.Name = "Card1";
             this.Card1.Size = new System.Drawing.Size(123, 169);
             this.Card1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,7 +88,7 @@
             // 
             // Card2
             // 
-            this.Card2.Location = new System.Drawing.Point(146, 69);
+            this.Card2.Location = new System.Drawing.Point(141, 321);
             this.Card2.Name = "Card2";
             this.Card2.Size = new System.Drawing.Size(123, 169);
             this.Card2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,7 +97,7 @@
             // 
             // Card3
             // 
-            this.Card3.Location = new System.Drawing.Point(275, 69);
+            this.Card3.Location = new System.Drawing.Point(270, 321);
             this.Card3.Name = "Card3";
             this.Card3.Size = new System.Drawing.Size(123, 169);
             this.Card3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,7 +106,7 @@
             // 
             // Card4
             // 
-            this.Card4.Location = new System.Drawing.Point(404, 69);
+            this.Card4.Location = new System.Drawing.Point(399, 321);
             this.Card4.Name = "Card4";
             this.Card4.Size = new System.Drawing.Size(123, 169);
             this.Card4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@
             // 
             // Card5
             // 
-            this.Card5.Location = new System.Drawing.Point(533, 69);
+            this.Card5.Location = new System.Drawing.Point(528, 321);
             this.Card5.Name = "Card5";
             this.Card5.Size = new System.Drawing.Size(123, 169);
             this.Card5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +124,7 @@
             // 
             // Card6
             // 
-            this.Card6.Location = new System.Drawing.Point(662, 69);
+            this.Card6.Location = new System.Drawing.Point(657, 321);
             this.Card6.Name = "Card6";
             this.Card6.Size = new System.Drawing.Size(123, 169);
             this.Card6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +134,7 @@
             // txtRestantes
             // 
             this.txtRestantes.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRestantes.Location = new System.Drawing.Point(874, 270);
+            this.txtRestantes.Location = new System.Drawing.Point(876, 37);
             this.txtRestantes.Name = "txtRestantes";
             this.txtRestantes.ReadOnly = true;
             this.txtRestantes.Size = new System.Drawing.Size(71, 20);
@@ -144,7 +144,7 @@
             // txtSuma
             // 
             this.txtSuma.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSuma.Location = new System.Drawing.Point(478, 25);
+            this.txtSuma.Location = new System.Drawing.Point(473, 277);
             this.txtSuma.Name = "txtSuma";
             this.txtSuma.ReadOnly = true;
             this.txtSuma.Size = new System.Drawing.Size(71, 20);
@@ -157,7 +157,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(74, 27);
+            this.label1.Location = new System.Drawing.Point(69, 279);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 18;
@@ -169,7 +169,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(804, 270);
+            this.label2.Location = new System.Drawing.Point(806, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 19;
@@ -181,7 +181,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(409, 27);
+            this.label3.Location = new System.Drawing.Point(404, 279);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 17);
             this.label3.TabIndex = 20;
@@ -193,7 +193,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(94, 268);
+            this.label4.Location = new System.Drawing.Point(96, 35);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 17);
             this.label4.TabIndex = 21;
@@ -201,7 +201,7 @@
             // 
             // CardDealer6
             // 
-            this.CardDealer6.Location = new System.Drawing.Point(662, 308);
+            this.CardDealer6.Location = new System.Drawing.Point(664, 75);
             this.CardDealer6.Name = "CardDealer6";
             this.CardDealer6.Size = new System.Drawing.Size(123, 169);
             this.CardDealer6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -210,7 +210,7 @@
             // 
             // CardDealer5
             // 
-            this.CardDealer5.Location = new System.Drawing.Point(533, 308);
+            this.CardDealer5.Location = new System.Drawing.Point(535, 75);
             this.CardDealer5.Name = "CardDealer5";
             this.CardDealer5.Size = new System.Drawing.Size(123, 169);
             this.CardDealer5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -219,7 +219,7 @@
             // 
             // CardDealer4
             // 
-            this.CardDealer4.Location = new System.Drawing.Point(404, 308);
+            this.CardDealer4.Location = new System.Drawing.Point(406, 75);
             this.CardDealer4.Name = "CardDealer4";
             this.CardDealer4.Size = new System.Drawing.Size(123, 169);
             this.CardDealer4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,7 +228,7 @@
             // 
             // CardDealer3
             // 
-            this.CardDealer3.Location = new System.Drawing.Point(275, 308);
+            this.CardDealer3.Location = new System.Drawing.Point(277, 75);
             this.CardDealer3.Name = "CardDealer3";
             this.CardDealer3.Size = new System.Drawing.Size(123, 169);
             this.CardDealer3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,7 +237,7 @@
             // 
             // CardDealer2
             // 
-            this.CardDealer2.Location = new System.Drawing.Point(146, 308);
+            this.CardDealer2.Location = new System.Drawing.Point(148, 75);
             this.CardDealer2.Name = "CardDealer2";
             this.CardDealer2.Size = new System.Drawing.Size(123, 169);
             this.CardDealer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -246,7 +246,7 @@
             // 
             // CardDealer1
             // 
-            this.CardDealer1.Location = new System.Drawing.Point(17, 310);
+            this.CardDealer1.Location = new System.Drawing.Point(19, 77);
             this.CardDealer1.Name = "CardDealer1";
             this.CardDealer1.Size = new System.Drawing.Size(123, 169);
             this.CardDealer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -259,7 +259,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(555, 27);
+            this.label5.Location = new System.Drawing.Point(550, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 17);
             this.label5.TabIndex = 31;
@@ -268,7 +268,7 @@
             // txtGanadas
             // 
             this.txtGanadas.BackColor = System.Drawing.SystemColors.Window;
-            this.txtGanadas.Location = new System.Drawing.Point(641, 24);
+            this.txtGanadas.Location = new System.Drawing.Point(636, 276);
             this.txtGanadas.Name = "txtGanadas";
             this.txtGanadas.ReadOnly = true;
             this.txtGanadas.Size = new System.Drawing.Size(71, 20);
@@ -281,7 +281,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(718, 27);
+            this.label6.Location = new System.Drawing.Point(713, 279);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 17);
             this.label6.TabIndex = 33;
@@ -290,7 +290,7 @@
             // txtPerdidas
             // 
             this.txtPerdidas.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPerdidas.Location = new System.Drawing.Point(797, 25);
+            this.txtPerdidas.Location = new System.Drawing.Point(792, 277);
             this.txtPerdidas.Name = "txtPerdidas";
             this.txtPerdidas.ReadOnly = true;
             this.txtPerdidas.Size = new System.Drawing.Size(71, 20);
@@ -300,7 +300,7 @@
             // imagenJugador
             // 
             this.imagenJugador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imagenJugador.Location = new System.Drawing.Point(17, 12);
+            this.imagenJugador.Location = new System.Drawing.Point(12, 264);
             this.imagenJugador.Name = "imagenJugador";
             this.imagenJugador.Size = new System.Drawing.Size(51, 48);
             this.imagenJugador.TabIndex = 34;
@@ -308,7 +308,7 @@
             // 
             // imagenDealer
             // 
-            this.imagenDealer.Location = new System.Drawing.Point(17, 256);
+            this.imagenDealer.Location = new System.Drawing.Point(19, 23);
             this.imagenDealer.Name = "imagenDealer";
             this.imagenDealer.Size = new System.Drawing.Size(51, 48);
             this.imagenDealer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -319,7 +319,7 @@
             // 
             this.btnNueva.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnNueva.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnNueva.Location = new System.Drawing.Point(956, 71);
+            this.btnNueva.Location = new System.Drawing.Point(876, 346);
             this.btnNueva.Name = "btnNueva";
             this.btnNueva.Size = new System.Drawing.Size(92, 30);
             this.btnNueva.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -337,7 +337,7 @@
             this.txtDealer.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtDealer.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDealer.ForeColor = System.Drawing.Color.Black;
-            this.txtDealer.Location = new System.Drawing.Point(162, 264);
+            this.txtDealer.Location = new System.Drawing.Point(164, 31);
             this.txtDealer.Name = "txtDealer";
             this.txtDealer.ReadOnly = true;
             this.txtDealer.Size = new System.Drawing.Size(257, 26);
@@ -353,7 +353,7 @@
             this.txtJugador.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtJugador.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJugador.ForeColor = System.Drawing.Color.Black;
-            this.txtJugador.Location = new System.Drawing.Point(146, 23);
+            this.txtJugador.Location = new System.Drawing.Point(141, 275);
             this.txtJugador.Name = "txtJugador";
             this.txtJugador.ReadOnly = true;
             this.txtJugador.Size = new System.Drawing.Size(257, 26);
@@ -363,7 +363,7 @@
             // 
             this.btnRebarajar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnRebarajar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnRebarajar.Location = new System.Drawing.Point(956, 107);
+            this.btnRebarajar.Location = new System.Drawing.Point(876, 382);
             this.btnRebarajar.Name = "btnRebarajar";
             this.btnRebarajar.Size = new System.Drawing.Size(92, 28);
             this.btnRebarajar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -375,7 +375,7 @@
             // 
             this.btnPedir.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnPedir.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnPedir.Location = new System.Drawing.Point(956, 141);
+            this.btnPedir.Location = new System.Drawing.Point(876, 416);
             this.btnPedir.Name = "btnPedir";
             this.btnPedir.Size = new System.Drawing.Size(92, 28);
             this.btnPedir.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -387,7 +387,7 @@
             // 
             this.btnPasar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnPasar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnPasar.Location = new System.Drawing.Point(956, 175);
+            this.btnPasar.Location = new System.Drawing.Point(876, 450);
             this.btnPasar.Name = "btnPasar";
             this.btnPasar.Size = new System.Drawing.Size(92, 28);
             this.btnPasar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -401,7 +401,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(870, 26);
+            this.label7.Location = new System.Drawing.Point(865, 278);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 17);
             this.label7.TabIndex = 43;
@@ -410,7 +410,7 @@
             // txtTotal
             // 
             this.txtTotal.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTotal.Location = new System.Drawing.Point(997, 24);
+            this.txtTotal.Location = new System.Drawing.Point(992, 276);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(71, 20);
